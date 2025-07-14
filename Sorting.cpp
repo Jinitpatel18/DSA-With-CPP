@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void bubbleSort(int arr[], int n)
+void bubbleSort(int arr[], int n) //O(n^2)
 {
     for (int i = 0; i < n; i++)
     {
@@ -16,7 +16,7 @@ void bubbleSort(int arr[], int n)
     }
 }
 
-void selectionSort(int arr[], int n)
+void selectionSort(int arr[], int n)//O(n^2)
 {
     for (int i = 0; i < n; i++)
     {
@@ -30,7 +30,7 @@ void selectionSort(int arr[], int n)
     }
 }
 
-void insertionSort(int arr[], int n)
+void insertionSort(int arr[], int n)//O(n^2)
 {
     for (int i = 1; i < n; i++)
     {
@@ -57,8 +57,8 @@ int main()
 {
     int arr[] = {4, 1, 2, 5, 3};
     int n = 5;
-    // bubbleSort(arr,n);
-    // selectionSort(arr,n);
+    bubbleSort(arr,n);
+    selectionSort(arr,n);
     insertionSort(arr, n);
     printArray(arr, n);
     return 0;
